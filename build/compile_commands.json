@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ubuntu/node_program/build",
+  "command": "/usr/bin/g++ -DV8_COMPRESS_POINTERS -DV8_ENABLE_SANDBOX -I/home/ubuntu/node_program/. -I/home/ubuntu/node_program/include  -fno-rtti -fuse-ld=lld -g -std=gnu++20 -o CMakeFiles/my_node.dir/src/example.cc.o -c /home/ubuntu/node_program/src/example.cc",
+  "file": "/home/ubuntu/node_program/src/example.cc"
+},
+{
+  "directory": "/home/ubuntu/node_program/build",
+  "command": "/usr/bin/g++ -DV8_COMPRESS_POINTERS -DV8_ENABLE_SANDBOX -I/home/ubuntu/node_program/. -I/home/ubuntu/node_program/include  -fno-rtti -fuse-ld=lld -g -std=gnu++20 -o CMakeFiles/my_node.dir/src/main.cc.o -c /home/ubuntu/node_program/src/main.cc",
+  "file": "/home/ubuntu/node_program/src/main.cc"
+}
+]
