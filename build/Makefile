@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/node_program
+CMAKE_SOURCE_DIR = /home/ubuntu/node_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/node_program/build
+CMAKE_BINARY_DIR = /home/ubuntu/node_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/node_program/build/CMakeFiles /home/ubuntu/node_program/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/node_project/build/CMakeFiles /home/ubuntu/node_project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/node_program/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/node_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,29 +129,53 @@ my_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/build
 .PHONY : my_node/fast
 
-src/example.o: src/example.cc.o
-.PHONY : src/example.o
+src/console.o: src/console.cc.o
+.PHONY : src/console.o
 
 # target to build an object file
-src/example.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/example.cc.o
-.PHONY : src/example.cc.o
+src/console.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/console.cc.o
+.PHONY : src/console.cc.o
 
-src/example.i: src/example.cc.i
-.PHONY : src/example.i
+src/console.i: src/console.cc.i
+.PHONY : src/console.i
 
 # target to preprocess a source file
-src/example.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/example.cc.i
-.PHONY : src/example.cc.i
+src/console.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/console.cc.i
+.PHONY : src/console.cc.i
 
-src/example.s: src/example.cc.s
-.PHONY : src/example.s
+src/console.s: src/console.cc.s
+.PHONY : src/console.s
 
 # target to generate assembly for a file
-src/example.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/example.cc.s
-.PHONY : src/example.cc.s
+src/console.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/console.cc.s
+.PHONY : src/console.cc.s
+
+src/file.o: src/file.cc.o
+.PHONY : src/file.o
+
+# target to build an object file
+src/file.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/file.cc.o
+.PHONY : src/file.cc.o
+
+src/file.i: src/file.cc.i
+.PHONY : src/file.i
+
+# target to preprocess a source file
+src/file.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/file.cc.i
+.PHONY : src/file.cc.i
+
+src/file.s: src/file.cc.s
+.PHONY : src/file.s
+
+# target to generate assembly for a file
+src/file.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/file.cc.s
+.PHONY : src/file.cc.s
 
 src/main.o: src/main.cc.o
 .PHONY : src/main.o
@@ -177,6 +201,30 @@ src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
+src/util.o: src/util.cc.o
+.PHONY : src/util.o
+
+# target to build an object file
+src/util.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/util.cc.o
+.PHONY : src/util.cc.o
+
+src/util.i: src/util.cc.i
+.PHONY : src/util.i
+
+# target to preprocess a source file
+src/util.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/util.cc.i
+.PHONY : src/util.cc.i
+
+src/util.s: src/util.cc.s
+.PHONY : src/util.s
+
+# target to generate assembly for a file
+src/util.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_node.dir/build.make CMakeFiles/my_node.dir/src/util.cc.s
+.PHONY : src/util.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +234,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_node"
-	@echo "... src/example.o"
-	@echo "... src/example.i"
-	@echo "... src/example.s"
+	@echo "... src/console.o"
+	@echo "... src/console.i"
+	@echo "... src/console.s"
+	@echo "... src/file.o"
+	@echo "... src/file.i"
+	@echo "... src/file.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/util.o"
+	@echo "... src/util.i"
+	@echo "... src/util.s"
 .PHONY : help
 
 

@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ubuntu/node_program/src/example.cc" "CMakeFiles/my_node.dir/src/example.cc.o" "gcc" "CMakeFiles/my_node.dir/src/example.cc.o.d"
-  "/home/ubuntu/node_program/src/main.cc" "CMakeFiles/my_node.dir/src/main.cc.o" "gcc" "CMakeFiles/my_node.dir/src/main.cc.o.d"
+  "/home/ubuntu/node_project/src/console.cc" "CMakeFiles/my_node.dir/src/console.cc.o" "gcc" "CMakeFiles/my_node.dir/src/console.cc.o.d"
+  "/home/ubuntu/node_project/src/file.cc" "CMakeFiles/my_node.dir/src/file.cc.o" "gcc" "CMakeFiles/my_node.dir/src/file.cc.o.d"
+  "/home/ubuntu/node_project/src/main.cc" "CMakeFiles/my_node.dir/src/main.cc.o" "gcc" "CMakeFiles/my_node.dir/src/main.cc.o.d"
+  "/home/ubuntu/node_project/src/util.cc" "CMakeFiles/my_node.dir/src/util.cc.o" "gcc" "CMakeFiles/my_node.dir/src/util.cc.o.d"
   )
 
 # Targets to which this target links.

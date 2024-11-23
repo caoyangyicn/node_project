@@ -1,1 +1,1 @@
-/usr/bin/g++  -fno-rtti -fuse-ld=lld -g  -L/home/ubuntu/node_program/lib -Wl,-rpath=/home/ubuntu/node_program/lib CMakeFiles/my_node.dir/src/example.cc.o CMakeFiles/my_node.dir/src/main.cc.o -o my_node  -lv8_monolith -luv -ldl -lpthread 
+/usr/bin/c++  -fno-rtti -fuse-ld=lld  -L/home/ubuntu/node_project/lib -Wl,-rpath=/home/ubuntu/node_project/lib CMakeFiles/my_node.dir/src/console.cc.o CMakeFiles/my_node.dir/src/file.cc.o CMakeFiles/my_node.dir/src/main.cc.o CMakeFiles/my_node.dir/src/util.cc.o -o my_node  -lv8_monolith -luv -ldl -lpthread 

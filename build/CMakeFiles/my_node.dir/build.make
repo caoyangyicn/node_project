@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/node_program
+CMAKE_SOURCE_DIR = /home/ubuntu/node_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/node_program/build
+CMAKE_BINARY_DIR = /home/ubuntu/node_project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/my_node.dir/depend.make
@@ -69,47 +69,79 @@ include CMakeFiles/my_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_node.dir/flags.make
 
-CMakeFiles/my_node.dir/src/example.cc.o: CMakeFiles/my_node.dir/flags.make
-CMakeFiles/my_node.dir/src/example.cc.o: ../src/example.cc
-CMakeFiles/my_node.dir/src/example.cc.o: CMakeFiles/my_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_program/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_node.dir/src/example.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/example.cc.o -MF CMakeFiles/my_node.dir/src/example.cc.o.d -o CMakeFiles/my_node.dir/src/example.cc.o -c /home/ubuntu/node_program/src/example.cc
+CMakeFiles/my_node.dir/src/console.cc.o: CMakeFiles/my_node.dir/flags.make
+CMakeFiles/my_node.dir/src/console.cc.o: ../src/console.cc
+CMakeFiles/my_node.dir/src/console.cc.o: CMakeFiles/my_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_node.dir/src/console.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/console.cc.o -MF CMakeFiles/my_node.dir/src/console.cc.o.d -o CMakeFiles/my_node.dir/src/console.cc.o -c /home/ubuntu/node_project/src/console.cc
 
-CMakeFiles/my_node.dir/src/example.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/example.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_program/src/example.cc > CMakeFiles/my_node.dir/src/example.cc.i
+CMakeFiles/my_node.dir/src/console.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/console.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_project/src/console.cc > CMakeFiles/my_node.dir/src/console.cc.i
 
-CMakeFiles/my_node.dir/src/example.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/example.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_program/src/example.cc -o CMakeFiles/my_node.dir/src/example.cc.s
+CMakeFiles/my_node.dir/src/console.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/console.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_project/src/console.cc -o CMakeFiles/my_node.dir/src/console.cc.s
+
+CMakeFiles/my_node.dir/src/file.cc.o: CMakeFiles/my_node.dir/flags.make
+CMakeFiles/my_node.dir/src/file.cc.o: ../src/file.cc
+CMakeFiles/my_node.dir/src/file.cc.o: CMakeFiles/my_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_node.dir/src/file.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/file.cc.o -MF CMakeFiles/my_node.dir/src/file.cc.o.d -o CMakeFiles/my_node.dir/src/file.cc.o -c /home/ubuntu/node_project/src/file.cc
+
+CMakeFiles/my_node.dir/src/file.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/file.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_project/src/file.cc > CMakeFiles/my_node.dir/src/file.cc.i
+
+CMakeFiles/my_node.dir/src/file.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/file.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_project/src/file.cc -o CMakeFiles/my_node.dir/src/file.cc.s
 
 CMakeFiles/my_node.dir/src/main.cc.o: CMakeFiles/my_node.dir/flags.make
 CMakeFiles/my_node.dir/src/main.cc.o: ../src/main.cc
 CMakeFiles/my_node.dir/src/main.cc.o: CMakeFiles/my_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_program/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_node.dir/src/main.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/main.cc.o -MF CMakeFiles/my_node.dir/src/main.cc.o.d -o CMakeFiles/my_node.dir/src/main.cc.o -c /home/ubuntu/node_program/src/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_node.dir/src/main.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/main.cc.o -MF CMakeFiles/my_node.dir/src/main.cc.o.d -o CMakeFiles/my_node.dir/src/main.cc.o -c /home/ubuntu/node_project/src/main.cc
 
 CMakeFiles/my_node.dir/src/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/main.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_program/src/main.cc > CMakeFiles/my_node.dir/src/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_project/src/main.cc > CMakeFiles/my_node.dir/src/main.cc.i
 
 CMakeFiles/my_node.dir/src/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/main.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_program/src/main.cc -o CMakeFiles/my_node.dir/src/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_project/src/main.cc -o CMakeFiles/my_node.dir/src/main.cc.s
+
+CMakeFiles/my_node.dir/src/util.cc.o: CMakeFiles/my_node.dir/flags.make
+CMakeFiles/my_node.dir/src/util.cc.o: ../src/util.cc
+CMakeFiles/my_node.dir/src/util.cc.o: CMakeFiles/my_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/node_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_node.dir/src/util.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_node.dir/src/util.cc.o -MF CMakeFiles/my_node.dir/src/util.cc.o.d -o CMakeFiles/my_node.dir/src/util.cc.o -c /home/ubuntu/node_project/src/util.cc
+
+CMakeFiles/my_node.dir/src/util.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_node.dir/src/util.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/node_project/src/util.cc > CMakeFiles/my_node.dir/src/util.cc.i
+
+CMakeFiles/my_node.dir/src/util.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_node.dir/src/util.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/node_project/src/util.cc -o CMakeFiles/my_node.dir/src/util.cc.s
 
 # Object files for target my_node
 my_node_OBJECTS = \
-"CMakeFiles/my_node.dir/src/example.cc.o" \
-"CMakeFiles/my_node.dir/src/main.cc.o"
+"CMakeFiles/my_node.dir/src/console.cc.o" \
+"CMakeFiles/my_node.dir/src/file.cc.o" \
+"CMakeFiles/my_node.dir/src/main.cc.o" \
+"CMakeFiles/my_node.dir/src/util.cc.o"
 
 # External object files for target my_node
 my_node_EXTERNAL_OBJECTS =
 
-my_node: CMakeFiles/my_node.dir/src/example.cc.o
+my_node: CMakeFiles/my_node.dir/src/console.cc.o
+my_node: CMakeFiles/my_node.dir/src/file.cc.o
 my_node: CMakeFiles/my_node.dir/src/main.cc.o
+my_node: CMakeFiles/my_node.dir/src/util.cc.o
 my_node: CMakeFiles/my_node.dir/build.make
 my_node: CMakeFiles/my_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/node_program/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable my_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/node_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable my_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +153,6 @@ CMakeFiles/my_node.dir/clean:
 .PHONY : CMakeFiles/my_node.dir/clean
 
 CMakeFiles/my_node.dir/depend:
-	cd /home/ubuntu/node_program/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/node_program /home/ubuntu/node_program /home/ubuntu/node_program/build /home/ubuntu/node_program/build /home/ubuntu/node_program/build/CMakeFiles/my_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/node_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/node_project /home/ubuntu/node_project /home/ubuntu/node_project/build /home/ubuntu/node_project/build /home/ubuntu/node_project/build/CMakeFiles/my_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_node.dir/depend
 
