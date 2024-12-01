@@ -10,9 +10,10 @@ include_directories(. include)
 
 # Add the executable
 file(GLOB SOURCES "src/*.cc")
-add_executable(my_node ${SOURCES})
+add_executable(my_node ${SOURCES}
+        src/File.cc
+        src/File.h)
 
-# add_executable(my_node src/main.cc src/my_file.cc src/util.cc)
 link_directories(lib)
 
 # Link the required libraries
@@ -32,3 +33,5 @@ target_compile_definitions(my_node PRIVATE
 # Specify the linker
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti -fuse-ld=lld")
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -L${CMAKE_SOURCE_DIR}/lib -Wl,-rpath=${CMAKE_SOURCE_DIR}/lib")
+
+

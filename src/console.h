@@ -15,8 +15,10 @@
 
 using namespace std;
 using namespace v8;
-
-namespace Console1 {
-    void Log(const FunctionCallbackInfo<Value> &args);
-    void Initialize(Isolate * isolate, Local<Object> global, Local<Context> context);
+namespace my_node
+{
+    namespace Console1 {
+        void Log(const FunctionCallbackInfo<Value> &args);
+        void Initialize(Isolate * isolate, Local<Object> global, Local<Context> context);
+    }
 }

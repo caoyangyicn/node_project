@@ -10,20 +10,22 @@
 #include "include/v8-script.h"
 
 using namespace v8;
+namespace my_node
+{
 
-#define MV(module) \
-    module::Initialize(isolate, global, context);
-
-
-#define MOLEULES_LIST(V) \
-    V(Console1);       
+        #define MV(module) \
+        module::Initialize(isolate, global, context);
 
 
+        #define MOLEULES_LIST(V) \
+        V(Console1) \
+        V(File)
 
+        void setMethod(Isolate *isolate,
+                        Local<ObjectTemplate>
+                        recv, const char *name,
+                        FunctionCallback callback);
 
-void setMethod(Isolate *isolate, 
-                Local<ObjectTemplate> 
-                recv, const char *name, 
-                FunctionCallback callback);
-
-void register_builtins(Isolate * isolate, Local<Object> global, Local<Context> context);
+        void register_builtins(Isolate * isolate, Local<Object> global, Local<Context> context);
+        std::string ToString(Local<Value> value);
+}
