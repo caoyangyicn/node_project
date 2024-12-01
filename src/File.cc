@@ -38,7 +38,7 @@ namespace my_node {
 
             // Run the event loop
             uv_run(uv_default_loop(), UV_RUN_DEFAULT);
-            // uv_unref((uv_handle_t*)timer);
+            uv_unref((uv_handle_t*)timer);
         }
 
         void TimerCallback(uv_timer_t* handle) {
