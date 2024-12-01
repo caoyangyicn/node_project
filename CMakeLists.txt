@@ -12,7 +12,9 @@ include_directories(. include)
 file(GLOB SOURCES "src/*.cc")
 add_executable(my_node ${SOURCES}
         src/File.cc
-        src/File.h)
+        src/File.h
+        src/OS.cc
+        src/OS.h)
 
 link_directories(lib)
 
