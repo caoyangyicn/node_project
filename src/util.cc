@@ -24,6 +24,18 @@ namespace my_node
         void register_builtins(Isolate * isolate, Local<Object> global, Local<Context> context) {
             MOLEULES_LIST(MV);
         }
+
+        void generateErrorMessage(Isolate* isolate, char* msg)
+        {
+            v8::Local<v8::String> errorMessage = v8::String::NewFromUtf8(isolate, msg).ToLocalChecked();
+            v8::Local<v8::Value> error = v8::Exception::Error(errorMessage);
+            isolate->ThrowException(error);
+        }
+        std::string makeUTF8String(Isolate *isolate, v8::Local<v8::Value> value)
+        {
+            v8::String::Utf8Value path(isolate, value);
+            return *path ? *path : "null";
+        }
 }
 
 

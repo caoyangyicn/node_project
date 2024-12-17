@@ -8,6 +8,7 @@
 const int MAX_EVENT_SIZE = 100;
 
 namespace my_node {
+
     class nodeLoop {
     public:
         static nodeLoop& getInstance() {

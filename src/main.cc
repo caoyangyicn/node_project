@@ -11,6 +11,8 @@
 #include "util.h"
 #include <iostream>
 #include "loop.h"
+#include "Environment.h"
+
 
   int main(int argc, char* argv[]) {
    // 不需要输出缓冲，可以实时看到代码里的输出
@@ -27,6 +29,8 @@
     create_params.array_buffer_allocator = ArrayBuffer::Allocator::NewDefaultAllocator();
     // 创建一个 Isolate，V8 的对象
     Isolate* isolate = Isolate::New(create_params);
+    my_node::Environment* env = my_node::Environment::GetInstance(uv_default_loop(), isolate);
+
     {
       Isolate::Scope isolate_scope(isolate);
       // 创建一个 HandleScope，用于下面分配 Handle

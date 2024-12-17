@@ -14,7 +14,8 @@ add_executable(my_node ${SOURCES}
         src/File.cc
         src/File.h
         src/OS.cc
-        src/OS.h)
+        src/OS.h
+)
 
 link_directories(lib)
 
