@@ -169,16 +169,6 @@ class MaybeStackBuffer {
         inline v8::Local<v8::String> OneByteString(v8::Isolate* isolate,
                                                const char* data,
                                                int length = -1);
-
-    class BufferValue : public MaybeStackBuffer<char> {
-    public:
-      BufferValue(v8::Isolate* isolate, v8::Local<v8::Value> value);
-
-        inline std::string ToString() const { return std::string(out(), length()); }
-        inline std::string_view ToStringView() const {
-            return std::string_view(out(), length());
-        }
-    };
     void generateErrorMessage(Isolate* isolate, char* msg);
     void makeUTF8String(v8::Local<v8::String> value);
   std::string makeUTF8String(Isolate *isolate, v8::Local<v8::Value> value);
